@@ -1,6 +1,9 @@
 #include <catch2/catch_test_macros.hpp>
+#include <catch2/catch_approx.hpp>
 
 #include "TrackReconstructor.hpp"
+
+using Catch::Approx;
 
 TEST_CASE("TrackReconstructor returns one track when hits are present") {
     csc2026::TrackReconstructor reco(1.0);
@@ -28,4 +31,3 @@ TEST_CASE("TrackReconstructor best track is accessible") {
     REQUIRE(best != nullptr);
     REQUIRE(best->pt == Approx(2.0));
 }
-

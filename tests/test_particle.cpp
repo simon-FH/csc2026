@@ -1,6 +1,9 @@
 #include <catch2/catch_test_macros.hpp>
+#include <catch2/catch_approx.hpp>
 
 #include "Particle.hpp"
+
+using Catch::Approx;
 
 TEST_CASE("Particle pt calculation") {
     csc2026::Particle p(3.0, 4.0, 0.0, 0.0);
