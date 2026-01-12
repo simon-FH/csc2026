@@ -52,3 +52,4 @@ rm -rf build-asan/
 CC=clang CXX=clang++ cmake -B build-asan -G Ninja -DCMAKE_BUILD_TYPE=Debug -DENABLE_SANITIZERS=ON
 cmake --build build-asan
 ./build-asan/analyze
+
