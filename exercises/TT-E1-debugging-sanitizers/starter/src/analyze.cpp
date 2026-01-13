@@ -1,4 +1,4 @@
-#include "TrackReconstructor.hpp"
+#include "../include/TrackReconstructor.hpp"
 
 #include <iostream>
 

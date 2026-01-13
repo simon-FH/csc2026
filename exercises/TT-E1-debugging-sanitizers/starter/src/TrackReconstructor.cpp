@@ -1,6 +1,4 @@
-#include "TrackReconstructor.hpp"
-
-#include <iostream>
+#include "../include/TrackReconstructor.hpp"
 
 namespace tt_e1 {
 
