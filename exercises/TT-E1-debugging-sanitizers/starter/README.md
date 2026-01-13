@@ -47,7 +47,7 @@ ctest --test-dir build-asan --output-on-failure
 
 The test is expected to fail or crash until you fix the exercise code.
 
-
+cd /workspaces/csc2026/exercises/TT-E1-debugging-sanitizers/starter
 rm -rf build-asan/
 CC=clang CXX=clang++ cmake -B build-asan -G Ninja -DCMAKE_BUILD_TYPE=Debug -DENABLE_SANITIZERS=ON
 cmake --build build-asan

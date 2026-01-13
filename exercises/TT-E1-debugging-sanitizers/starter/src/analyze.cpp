@@ -8,7 +8,10 @@ int main() {
     tt_e1::TrackReconstructor reco(/*minPt=*/1.0);
 
     // Create a small hit list
-    for (int i = 0; i < 10; ++i) {
+    int n_hits = 0;
+    // std::cout << "Number of hits: ";
+    // std::cin >> n_hits;
+    for (int i = 0; i < n_hits; ++i) {
         tt_e1::Hit h{};
         h.x = 0.1 * i;
         h.y = 0.2 * i;
@@ -27,4 +30,3 @@ int main() {
 
     return 0;
 }
-
